@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                 <connections>
-                                    <action selector="SaveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMc-mV-o7I"/>
+                                    <segue destination="Kwe-kk-Hjz" kind="show" id="PU0-PG-j5i"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Zx-pc-VHD">

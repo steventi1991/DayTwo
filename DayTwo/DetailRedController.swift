@@ -12,17 +12,16 @@ import UIKit
 
 class DetailRedController: UIViewController{
     
-
+    
+    var namaGua=""
     @IBOutlet weak var nickNameLabel: UILabel!
-    struct nickName {
-        static var name = ""
-    }
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nickNameLabel.text = "Heloo " + nickName.name
+        nickNameLabel.text=namaGua
      
     }
 }

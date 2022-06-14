@@ -9,17 +9,16 @@ import UIKit
 
 class RedViewController: UIViewController {
 
-    @IBOutlet weak var nickName: UITextField!
     
-    @IBAction func SaveButton(_ sender: Any) {
-        let a = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailRedController")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-         self.navigationController?.pushViewController(a, animated: true)
+            let destinationVC = segue.destination as? DetailRedController
 
-         DetailRedController.nickName.name = nickName.text ?? ""
-        
+            destinationVC?.namaGua = nickName.text ?? ""
+        }
+    
+        @IBOutlet weak var nickName: UITextField!
 
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
