@@ -9,8 +9,13 @@ import UIKit
 
 class YellowViewController: UIViewController {
 
+    @IBOutlet weak var textLabel: UILabel!
+    var text:String = ""
+    	
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textLabel?.text = text
         // new comment
         // Do any additional setup after loading the view.
     }

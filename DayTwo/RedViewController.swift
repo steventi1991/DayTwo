@@ -9,6 +9,8 @@ import UIKit
 
 class RedViewController: UIViewController {
 
+    var text:String = ""
+    @IBOutlet weak var usernameText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -16,8 +18,18 @@ class RedViewController: UIViewController {
 
 
     @IBAction func redNextButton(_ sender: Any) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "YellowViewController")
-       self.navigationController?.pushViewController(vc, animated: true)
+        text = usernameText.text!
+        self.performSegue(withIdentifier: "segueAtoB", sender: self)
+//        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "YellowViewController")
+        
+//       self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func prepare(for segue:UIStoryboardSegue, sender:Any?){
+        if segue.identifier == "segueAtoB"{
+            let displayVC = segue.destination as! YellowViewController
+            displayVC.text = usernameText.text!
+        }
     }
 }
 
