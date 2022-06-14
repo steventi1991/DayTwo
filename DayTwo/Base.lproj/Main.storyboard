@@ -88,11 +88,11 @@
             </objects>
             <point key="canvasLocation" x="870" y="2906"/>
         </scene>
-        <!--Item-->
+        <!--Account-->
         <scene sceneID="VXi-Wz-2a3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d0k-TK-aoa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="12B-5M-yhR"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" id="12B-5M-yhR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wH2-G9-PIc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -107,11 +107,11 @@
             </objects>
             <point key="canvasLocation" x="19" y="84"/>
         </scene>
-        <!--Item-->
+        <!--Chat-->
         <scene sceneID="Rff-lJ-DaO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lyU-rV-haH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9FV-Ae-1ra"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="bubble.right.circle.fill" catalog="system" id="9FV-Ae-1ra"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HxR-0z-UeJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -126,11 +126,11 @@
             </objects>
             <point key="canvasLocation" x="19" y="763"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="ulP-Mf-Cjf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qnd-Sq-poi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="DB8-QG-HoP"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="DB8-QG-HoP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Urg-io-CmM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -145,11 +145,11 @@
             </objects>
             <point key="canvasLocation" x="19" y="1458"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="kOM-rd-hZ7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="itx-ks-kKq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9Gk-n0-Ubu"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear.circle.fill" catalog="system" id="9Gk-n0-Ubu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IhX-DU-dZj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -164,11 +164,11 @@
             </objects>
             <point key="canvasLocation" x="19" y="2169"/>
         </scene>
-        <!--Item-->
+        <!--About-->
         <scene sceneID="5ju-Wb-loU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dEz-Wt-gbc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lkZ-xb-sSq"/>
+                    <tabBarItem key="tabBarItem" title="About" image="questionmark.app.fill" catalog="system" id="lkZ-xb-sSq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uhZ-bT-rJf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -189,6 +189,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pUT-cz-b9T" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zzf-dE-o6f">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -206,6 +207,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bubble.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="gear.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="questionmark.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
