@@ -10,17 +10,15 @@ import UIKit
 class BlackViewController: UIViewController{
     
     @IBOutlet weak var label: UILabel!
-    var text: String?
     
-    struct myVar{
-        static var texttest = ""
-    }
-        override func viewDidLoad() {
+
+    var textB = ""
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-            label.text = myVar.texttest
-        // Do any additional setup after loading the view.
-           
+        label.text = textB
     }
+
 }
     
     

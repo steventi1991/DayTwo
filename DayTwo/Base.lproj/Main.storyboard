@@ -233,7 +233,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kL-NY-TCX">
-                                <rect key="frame" x="186" y="179" width="42" height="21"/>
+                                <rect key="frame" x="186" y="219" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -245,7 +245,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="4hQ-38-HNr"/>
                     <connections>
-                        <outlet property="label" destination="5kL-NY-TCX" id="eEF-qI-9x2"/>
+                        <outlet property="label" destination="5kL-NY-TCX" id="Wih-0Q-Uid"/>
                     </connections>
                 </viewController>
             </objects>
