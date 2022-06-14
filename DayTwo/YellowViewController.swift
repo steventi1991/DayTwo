@@ -10,7 +10,7 @@ import UIKit
 class YellowViewController: UIViewController {
 
     @IBOutlet weak var textLabel: UILabel!
-    var text:String = ""
+    var text:String?
     	
     override func viewDidLoad() {
         super.viewDidLoad()
