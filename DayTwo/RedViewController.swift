@@ -27,8 +27,10 @@ class RedViewController: UIViewController {
     
     override func prepare(for segue:UIStoryboardSegue, sender:Any?){
         if segue.identifier == "segueAtoB"{
-            let displayVC = segue.destination as! YellowViewController
-            displayVC.text = usernameText.text
+//            let displayVC = YellowViewController()
+            let displayVC = segue.destination as? YellowViewController
+            displayVC?.text = usernameText.text
+
         }
     }
 }

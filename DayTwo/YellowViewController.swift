@@ -14,7 +14,6 @@ class YellowViewController: UIViewController {
     	
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         textLabel?.text = text
         // new comment
         // Do any additional setup after loading the view.
