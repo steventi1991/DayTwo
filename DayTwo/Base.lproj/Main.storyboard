@@ -17,11 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ja1-cm-Tau">
-                                <rect key="frame" x="50" y="138" width="250" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="7UN-pj-4Oh"/>
-                                    <constraint firstAttribute="width" constant="250" id="SiE-st-AaK"/>
-                                </constraints>
+                                <rect key="frame" x="50" y="138" width="264" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
@@ -29,7 +25,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RM5-P3-Hlu">
-                                <rect key="frame" x="50" y="298" width="264" height="50"/>
+                                <rect key="frame" x="50" y="269" width="264" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Bof-jb-1a9"/>
                                 </constraints>
@@ -45,6 +41,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RM5-P3-Hlu" secondAttribute="trailing" constant="100" id="VOI-Na-ows"/>
                             <constraint firstItem="RM5-P3-Hlu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Wkj-M0-Kbg"/>
                             <constraint firstItem="ja1-cm-Tau" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="jYv-Bl-AZZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ja1-cm-Tau" secondAttribute="trailing" constant="100" id="lvo-5h-7gL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WOd-4p-wBu"/>
@@ -65,16 +62,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mto-ob-gZD">
-                                <rect key="frame" x="50" y="138" width="250" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="0SJ-Oi-0sy"/>
-                                    <constraint firstAttribute="width" constant="250" id="p6U-x5-4LC"/>
-                                </constraints>
+                                <rect key="frame" x="50" y="138" width="264" height="54.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AaaAAAAAAA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it7-Pj-2gj">
-                                <rect key="frame" x="50" y="248" width="314" height="515"/>
+                                <rect key="frame" x="50" y="292.5" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -83,12 +76,13 @@
                         <viewLayoutGuide key="safeArea" id="hbf-Jk-kpy"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="it7-Pj-2gj" firstAttribute="top" secondItem="mto-ob-gZD" secondAttribute="bottom" constant="50" id="1yI-b9-8gG"/>
                             <constraint firstItem="hbf-Jk-kpy" firstAttribute="trailing" secondItem="it7-Pj-2gj" secondAttribute="trailing" constant="50" id="DWV-Up-Ff5"/>
                             <constraint firstItem="mto-ob-gZD" firstAttribute="leading" secondItem="hbf-Jk-kpy" secondAttribute="leading" constant="50" id="SiT-xE-2UC"/>
+                            <constraint firstItem="it7-Pj-2gj" firstAttribute="top" secondItem="mto-ob-gZD" secondAttribute="bottom" constant="100" id="XJ4-G6-CaB"/>
                             <constraint firstItem="mto-ob-gZD" firstAttribute="top" secondItem="hbf-Jk-kpy" secondAttribute="top" constant="50" id="Xbg-Tf-KDb"/>
                             <constraint firstItem="it7-Pj-2gj" firstAttribute="leading" secondItem="hbf-Jk-kpy" secondAttribute="leading" constant="50" id="jqq-rN-fkk"/>
-                            <constraint firstItem="hbf-Jk-kpy" firstAttribute="bottom" secondItem="it7-Pj-2gj" secondAttribute="bottom" constant="50" id="zb3-14-YfD"/>
+                            <constraint firstItem="hbf-Jk-kpy" firstAttribute="trailing" secondItem="mto-ob-gZD" secondAttribute="trailing" constant="100" id="wro-xg-0wG"/>
+                            <constraint firstItem="hbf-Jk-kpy" firstAttribute="bottom" secondItem="it7-Pj-2gj" secondAttribute="bottom" constant="500" id="zb3-14-YfD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bj8-Q7-tbo"/>
@@ -109,11 +103,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMl-DO-gat">
-                                <rect key="frame" x="50" y="138" width="250" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="AqX-wW-pBs"/>
-                                    <constraint firstAttribute="width" constant="250" id="XM4-2d-q7T"/>
-                                </constraints>
+                                <rect key="frame" x="50" y="138" width="264" height="75"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
@@ -124,7 +114,9 @@
                         <viewLayoutGuide key="safeArea" id="Tza-yF-yBO"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="Tza-yF-yBO" firstAttribute="trailing" secondItem="CMl-DO-gat" secondAttribute="trailing" constant="100" id="1Hr-Gp-beZ"/>
                             <constraint firstItem="CMl-DO-gat" firstAttribute="top" secondItem="Tza-yF-yBO" secondAttribute="top" constant="50" id="5vQ-8q-la7"/>
+                            <constraint firstItem="Tza-yF-yBO" firstAttribute="bottom" secondItem="CMl-DO-gat" secondAttribute="bottom" constant="600" id="ZaG-qd-tQf"/>
                             <constraint firstItem="CMl-DO-gat" firstAttribute="leading" secondItem="Tza-yF-yBO" secondAttribute="leading" constant="50" id="orj-Lb-lzN"/>
                         </constraints>
                     </view>
@@ -142,12 +134,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vn-Wg-a95">
-                                <rect key="frame" x="69" y="134" width="250" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="aXU-q1-tFw"/>
-                                    <constraint firstAttribute="width" constant="250" id="w3Y-Ld-X3J"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vn-Wg-a95">
+                                <rect key="frame" x="50" y="138" width="264" height="75"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
@@ -160,6 +148,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YS1-9W-bL1"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="8vn-Wg-a95" firstAttribute="top" secondItem="YS1-9W-bL1" secondAttribute="top" constant="50" id="Afm-13-yxZ"/>
+                            <constraint firstItem="YS1-9W-bL1" firstAttribute="bottom" secondItem="8vn-Wg-a95" secondAttribute="bottom" constant="600" id="CWI-u9-2xI"/>
+                            <constraint firstItem="8vn-Wg-a95" firstAttribute="leading" secondItem="YS1-9W-bL1" secondAttribute="leading" constant="50" id="DlX-RA-G6G"/>
+                            <constraint firstItem="YS1-9W-bL1" firstAttribute="trailing" secondItem="8vn-Wg-a95" secondAttribute="trailing" constant="100" id="Gpg-RN-C2Z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iIK-PY-BXn"/>
                 </viewController>
@@ -176,11 +170,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOo-UE-led">
-                                <rect key="frame" x="50" y="138" width="250" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="9dY-xY-1h6"/>
-                                    <constraint firstAttribute="width" constant="250" id="fCS-St-nQy"/>
-                                </constraints>
+                                <rect key="frame" x="50" y="138" width="264" height="75"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
@@ -193,6 +183,8 @@
                         <viewLayoutGuide key="safeArea" id="uVV-MJ-Kux"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
+                            <constraint firstItem="uVV-MJ-Kux" firstAttribute="bottom" secondItem="oOo-UE-led" secondAttribute="bottom" constant="600" id="VSk-pw-K6F"/>
+                            <constraint firstItem="uVV-MJ-Kux" firstAttribute="trailing" secondItem="oOo-UE-led" secondAttribute="trailing" constant="100" id="glg-x2-mNd"/>
                             <constraint firstItem="oOo-UE-led" firstAttribute="leading" secondItem="uVV-MJ-Kux" secondAttribute="leading" constant="50" id="o9M-yJ-HbF"/>
                             <constraint firstItem="oOo-UE-led" firstAttribute="top" secondItem="uVV-MJ-Kux" secondAttribute="top" constant="50" id="ogh-e8-a25"/>
                         </constraints>
