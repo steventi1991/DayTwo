@@ -8,8 +8,10 @@
 import UIKit
 
 class YellowViewController: UIViewController {
-
+    @IBOutlet weak var labelName: UILabel!
+    var name : String = ""
     override func viewDidLoad() {
+        labelName.text = name
         super.viewDidLoad()
         // new comment
         // Do any additional setup after loading the view.
