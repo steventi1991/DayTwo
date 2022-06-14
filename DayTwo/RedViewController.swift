@@ -16,7 +16,9 @@ class RedViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "dataPasser"){
-            let displayVC = segue.destination as! YellowViewController
+            guard let displayVC = segue.destination as? YellowViewController else {
+                return
+            }
             displayVC.text = textField.text
         }
     }
