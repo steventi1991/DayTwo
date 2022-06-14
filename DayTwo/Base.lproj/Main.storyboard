@@ -99,6 +99,22 @@
                     <view key="view" contentMode="scaleToFill" id="eG8-9C-MTB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BY4-jI-8xW">
+                                <rect key="frame" x="160" y="432" width="94" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="NEXT">
+                                    <color key="baseBackgroundColor" systemColor="secondaryLabelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="blueNextButton:" destination="obf-U3-zW7" eventType="touchUpInside" id="VMx-Hz-ucn"/>
+                                    <action selector="greenNextButton:" destination="AoU-jT-LHY" eventType="touchUpInside" id="iHk-hc-g42"/>
+                                    <action selector="redNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HWh-JF-J30"/>
+                                    <action selector="yellowNextButton:" destination="trw-9T-51C" eventType="touchUpInside" id="ea9-PU-xxg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YS1-9W-bL1"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
                     </view>
@@ -243,6 +259,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
