@@ -84,6 +84,22 @@
                     <view key="view" contentMode="scaleToFill" id="6lm-mc-Fcy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMl-DO-gat">
+                                <rect key="frame" x="82" y="202" width="250" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="AqX-wW-pBs"/>
+                                    <constraint firstAttribute="width" constant="250" id="XM4-2d-q7T"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="greenButton:" destination="AoU-jT-LHY" eventType="touchUpInside" id="6af-Ap-9zm"/>
+                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHA-Ba-3ZO"/>
+                                    <action selector="yellowButton:" destination="trw-9T-51C" eventType="touchUpInside" id="qYm-dt-xZf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Tza-yF-yBO"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>

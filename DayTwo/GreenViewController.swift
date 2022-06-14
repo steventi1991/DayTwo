@@ -9,6 +9,10 @@ import UIKit
 
 class GreenViewController: UIViewController {
 
+    @IBAction func greenButton(_ sender: Any) {
+        let blueVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BlueViewController")
+        self.navigationController?.pushViewController(blueVC, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
