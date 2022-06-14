@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pUT-cz-b9T">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,48 +13,23 @@
             <objects>
                 <viewController storyboardIdentifier="RedViewController" id="BYZ-38-t0r" customClass="RedViewController" customModule="DayTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EpC-aA-LEi">
-                                <rect key="frame" x="87" y="356" width="224" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX1-cu-2bC">
-                                <rect key="frame" x="87" y="431" width="224" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" systemColor="systemTealColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="dfh-Ir-Evs" kind="show" id="bJ3-Ds-RQy"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="WOd-4p-wBu"/>
-                    <connections>
-                        <outlet property="textField" destination="EpC-aA-LEi" id="Bje-4q-KTM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869.23076923076917" y="83.175355450236964"/>
+            <point key="canvasLocation" x="870" y="84"/>
         </scene>
         <!--Yellow View Controller-->
         <scene sceneID="zdr-oW-nU3">
             <objects>
                 <viewController storyboardIdentifier="YellowViewController" id="trw-9T-51C" customClass="YellowViewController" customModule="DayTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9t5-dM-3wS">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="hbf-Jk-kpy"/>
                         <color key="backgroundColor" red="0.96841138601303101" green="0.90847209907801696" blue="0.70823580255330598" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -70,7 +45,7 @@
             <objects>
                 <viewController storyboardIdentifier="GreenViewController" id="AoU-jT-LHY" customClass="GreenViewController" customModule="DayTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6lm-mc-Fcy">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Tza-yF-yBO"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -86,7 +61,7 @@
             <objects>
                 <viewController storyboardIdentifier="BlueViewController" id="obf-U3-zW7" customClass="BlueViewController" customModule="DayTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eG8-9C-MTB">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="YS1-9W-bL1"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
@@ -102,7 +77,7 @@
             <objects>
                 <viewController storyboardIdentifier="PurpleViewController" id="pVW-cJ-KcG" customClass="PurpleViewController" customModule="DayTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WRt-5z-iOf">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="uVV-MJ-Kux"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -120,7 +95,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="12B-5M-yhR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wH2-G9-PIc">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -139,7 +114,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="9FV-Ae-1ra"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HxR-0z-UeJ">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -158,7 +133,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="DB8-QG-HoP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Urg-io-CmM">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -177,7 +152,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="9Gk-n0-Ubu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IhX-DU-dZj">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -196,7 +171,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="lkZ-xb-sSq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uhZ-bT-rJf">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -230,43 +205,6 @@
             </objects>
             <point key="canvasLocation" x="-6307" y="1458"/>
         </scene>
-        <!--Teal View Controller-->
-        <scene sceneID="zQn-wb-fSm">
-            <objects>
-                <viewController storyboardIdentifier="TealViewController" id="dfh-Ir-Evs" customClass="TealViewController" customModule="DayTwo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9x6-UA-zK7">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBN-Tb-8Go">
-                                <rect key="frame" x="95" y="397" width="200" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="830-VD-Q4f"/>
-                                    <constraint firstAttribute="width" constant="200" id="qMu-4F-DlG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="NRD-YH-BAs"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
-                        <constraints>
-                            <constraint firstItem="vBN-Tb-8Go" firstAttribute="centerX" secondItem="9x6-UA-zK7" secondAttribute="centerX" id="Iqc-Ty-8OV"/>
-                            <constraint firstItem="vBN-Tb-8Go" firstAttribute="centerY" secondItem="9x6-UA-zK7" secondAttribute="centerY" id="jm4-RI-Ie3"/>
-                            <constraint firstItem="vBN-Tb-8Go" firstAttribute="centerX" secondItem="9x6-UA-zK7" secondAttribute="centerX" id="k7D-gb-2sD"/>
-                            <constraint firstItem="vBN-Tb-8Go" firstAttribute="centerY" secondItem="9x6-UA-zK7" secondAttribute="centerY" id="sKR-BM-h2W"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="5gV-vH-e5f"/>
-                    <connections>
-                        <outlet property="label" destination="vBN-Tb-8Go" id="i4v-Pa-xXW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fnT-SN-DQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1726" y="84"/>
-        </scene>
     </scenes>
     <resources>
         <systemColor name="systemGreenColor">
@@ -277,9 +215,6 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
