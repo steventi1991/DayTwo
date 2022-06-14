@@ -14,6 +14,10 @@ class RedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func movePageTwo(_ sender: Any) {
+        let BlueVc =  UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "YellowViewController")
+        self.navigationController?.pushViewController(BlueVc, animated: true)    
+    }
+    
 }
 
