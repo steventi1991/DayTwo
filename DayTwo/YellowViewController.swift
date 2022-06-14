@@ -8,11 +8,13 @@
 import UIKit
 
 class YellowViewController: UIViewController {
-
+    struct globalVariable{
+        static var saldo=""
+    }
     @IBOutlet weak var labelText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelText.text=RedViewController.globalVariable.saldo
+        labelText.text=globalVariable.saldo
         // Do any additional setup after loading the view.
     }
 
