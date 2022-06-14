@@ -15,15 +15,12 @@ class BlackViewController: UIViewController{
     struct myVar{
         static var texttest = ""
     }
-    
         override func viewDidLoad() {
         super.viewDidLoad()
             label.text = myVar.texttest
         // Do any additional setup after loading the view.
-            
            
     }
-    
 }
     
     
