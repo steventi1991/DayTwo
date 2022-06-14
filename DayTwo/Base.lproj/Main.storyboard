@@ -15,8 +15,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ja1-cm-Tau">
+                                <rect key="frame" x="50" y="138" width="250" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7UN-pj-4Oh"/>
+                                    <constraint firstAttribute="width" constant="250" id="SiE-st-AaK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qGx-Yz-84y"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="ja1-cm-Tau" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="APs-17-4Z6"/>
+                            <constraint firstItem="ja1-cm-Tau" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="jYv-Bl-AZZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WOd-4p-wBu"/>
                 </viewController>
