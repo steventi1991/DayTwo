@@ -8,6 +8,13 @@
 import UIKit
 
 class RedViewController: UIViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  
+        let destinationVC = segue.destination as? YellowViewController
+        
+        destinationVC?.saldoSegue = textField.text ?? ""
+    }
+    @IBOutlet weak var textField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +22,7 @@ class RedViewController: UIViewController {
         //comment dari luthfi
     }
 
-
+ 
+    
 }
 

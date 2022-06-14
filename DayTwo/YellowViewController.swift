@@ -8,10 +8,12 @@
 import UIKit
 
 class YellowViewController: UIViewController {
-
+   
+    var saldoSegue=""
+    @IBOutlet weak var labelText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // new comment
+        labelText.text=saldoSegue
         // Do any additional setup after loading the view.
     }
 
