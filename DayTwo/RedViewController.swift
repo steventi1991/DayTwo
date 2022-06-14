@@ -8,19 +8,20 @@
 import UIKit
 
 class RedViewController: UIViewController {
- 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  
+        let destinationVC = segue.destination as! YellowViewController
+        
+        destinationVC.saldoSegue = textField.text ?? ""
+    }
     @IBOutlet weak var textField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func onNextTap(_ sender: Any) {
-        YellowViewController.globalVariable.saldo = textField.text ?? ""
-        let next = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "YellowViewController")
-        
-        self.navigationController?.pushViewController(next, animated: true)
-    }
+ 
     
 }
 
