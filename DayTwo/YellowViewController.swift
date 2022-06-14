@@ -14,6 +14,10 @@ class YellowViewController: UIViewController {
         // new comment
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func movePage3(_ sender: Any) {
+        let BlueVc =  UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "GreenViewController")
+        self.navigationController?.pushViewController(BlueVc, animated: true)
+    }
+    
 
 }
