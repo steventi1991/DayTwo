@@ -59,6 +59,7 @@
                         <viewLayoutGuide key="safeArea" id="tqC-g3-8ez"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HhV-3t-skX"/>
                     <connections>
                         <outlet property="nameLabel" destination="XMk-vY-fv9" id="4il-Gq-rAT"/>
                     </connections>
@@ -119,7 +120,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="buttonPurpClick:" destination="pVW-cJ-KcG" eventType="touchUpInside" id="ph7-c8-ErZ"/>
+                                    <segue destination="52S-Sm-U9x" kind="show" id="vEF-wH-fLN"/>
                                 </connections>
                             </button>
                         </subviews>

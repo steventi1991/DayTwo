@@ -12,14 +12,12 @@ class NextPurpleViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
-    struct myName {
-        static var nameVar = ""
-    }
+    var nameString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        nameLabel.text = myName.nameVar
+        nameLabel.text = nameString
         
     }
     
