@@ -15,14 +15,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uk3-Gc-3XT">
+                                <rect key="frame" x="35" y="208" width="332" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Um7-FZ-SKP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6x-9w-hpp">
+                                <rect key="frame" x="166" y="288" width="70" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="MQk-gH-v5F"/>
+                                    <constraint firstAttribute="height" constant="35" id="Vsq-qL-nxU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <connections>
+                                    <action selector="btnSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zrl-KQ-KcF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="uk3-Gc-3XT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="65q-es-FAp"/>
+                            <constraint firstItem="G6x-9w-hpp" firstAttribute="top" secondItem="uk3-Gc-3XT" secondAttribute="bottom" constant="35" id="AqU-qB-MyT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G6x-9w-hpp" secondAttribute="trailing" constant="166" id="RcB-27-zM6"/>
+                            <constraint firstItem="uk3-Gc-3XT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="jL0-Qg-v9M"/>
+                            <constraint firstItem="G6x-9w-hpp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="o5d-gq-9Uw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uk3-Gc-3XT" secondAttribute="trailing" constant="35" id="zF1-1T-Brb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WOd-4p-wBu"/>
+                    <connections>
+                        <outlet property="txtField" destination="uk3-Gc-3XT" id="Mlu-dg-orH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="84"/>
+            <point key="canvasLocation" x="869.56521739130437" y="83.705357142857139"/>
+        </scene>
+        <!--Next Page View Controller-->
+        <scene sceneID="2f9-m7-UCo">
+            <objects>
+                <viewController storyboardIdentifier="nextPage" id="zdS-c6-Ixn" customClass="NextPageViewController" customModule="DayTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XBa-92-scJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOD-29-jnP">
+                                <rect key="frame" x="157" y="430.5" width="100" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="LCl-en-O6N"/>
+                                    <constraint firstAttribute="height" constant="45" id="shd-3H-NCH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8v7-MM-fMf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QOD-29-jnP" firstAttribute="centerX" secondItem="8v7-MM-fMf" secondAttribute="centerX" id="G2A-ca-erK"/>
+                            <constraint firstItem="QOD-29-jnP" firstAttribute="centerY" secondItem="8v7-MM-fMf" secondAttribute="centerY" id="OM0-DZ-0cs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtLabel" destination="QOD-29-jnP" id="5Hh-X7-85F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ta-zl-mWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640.5797101449277" y="83.705357142857139"/>
         </scene>
         <!--Yellow View Controller-->
         <scene sceneID="zdr-oW-nU3">
@@ -207,6 +274,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
