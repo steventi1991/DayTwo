@@ -16,4 +16,8 @@ class YellowViewController: UIViewController {
     }
 
 
+    @IBAction func yellowNextButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GreenViewController")
+       self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
