@@ -131,6 +131,23 @@
                     <view key="view" contentMode="scaleToFill" id="WRt-5z-iOf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNe-Ru-AQZ">
+                                <rect key="frame" x="160" y="432" width="94" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="NEXT">
+                                    <color key="baseBackgroundColor" systemColor="secondaryLabelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="blueNextButton:" destination="obf-U3-zW7" eventType="touchUpInside" id="a8i-UF-ZXU"/>
+                                    <action selector="greenNextButton:" destination="AoU-jT-LHY" eventType="touchUpInside" id="vdj-l2-PEg"/>
+                                    <action selector="purpleNextButton:" destination="pVW-cJ-KcG" eventType="touchUpInside" id="eR4-sH-6c6"/>
+                                    <action selector="redNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ro2-xX-CEY"/>
+                                    <action selector="yellowNextButton:" destination="trw-9T-51C" eventType="touchUpInside" id="lQf-r2-iUB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uVV-MJ-Kux"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
