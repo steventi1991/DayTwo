@@ -15,10 +15,8 @@ class RedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "displayName"){
-            let display = segue.destination as! YellowViewController
-            display.name = textFieldName.text!
-            
+        if let vc = segue.destination as? YellowViewController {
+            vc.name = textFieldName.text
         }
         
     }

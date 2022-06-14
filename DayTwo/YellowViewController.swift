@@ -9,7 +9,7 @@ import UIKit
 
 class YellowViewController: UIViewController {
     @IBOutlet weak var labelName: UILabel!
-    var name : String = ""
+    var name : String? = ""
     override func viewDidLoad() {
         labelName.text = name
         super.viewDidLoad()
