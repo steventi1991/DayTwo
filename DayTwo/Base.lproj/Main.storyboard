@@ -15,14 +15,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zof-8p-D42">
+                                <rect key="frame" x="131" y="318" width="116" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="SaveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMc-mV-o7I"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Zx-pc-VHD">
+                                <rect key="frame" x="58" y="276" width="299" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="WOd-4p-wBu"/>
+                    <connections>
+                        <outlet property="nickName" destination="8Zx-pc-VHD" id="S3k-Cu-4Zg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="84"/>
+            <point key="canvasLocation" x="869.56521739130437" y="83.705357142857139"/>
+        </scene>
+        <!--Detail Red Controller-->
+        <scene sceneID="SIp-ZE-cLf">
+            <objects>
+                <viewController storyboardIdentifier="DetailRedController" id="Kwe-kk-Hjz" customClass="DetailRedController" customModule="DayTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Pe-Nc-31q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Halo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T6-3g-irQ">
+                                <rect key="frame" x="114" y="346" width="185" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YLn-U0-CUf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mwB-Je-n3k"/>
+                    <connections>
+                        <outlet property="nickNameLabel" destination="7T6-3g-irQ" id="vgs-MO-Mb7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJw-pY-ejg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640.5797101449277" y="83.705357142857139"/>
         </scene>
         <!--Yellow View Controller-->
         <scene sceneID="zdr-oW-nU3">
@@ -69,6 +117,12 @@
                     <navigationItem key="navigationItem" id="iIK-PY-BXn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BF2-3n-Veo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="yJG-ge-LdZ">
+                    <rect key="frame" x="0.0" y="0.0" width="97" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </objects>
             <point key="canvasLocation" x="870" y="2169"/>
         </scene>
@@ -212,6 +266,9 @@
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
