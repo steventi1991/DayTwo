@@ -15,14 +15,35 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="flg-nZ-5m7">
+                                <rect key="frame" x="127" y="353" width="178" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfM-ab-Qgq">
+                                <rect key="frame" x="165" y="450" width="86" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submited"/>
+                                <connections>
+                                    <action selector="nextaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TF6-Yx-yHK"/>
+                                    <segue destination="trw-9T-51C" kind="show" identifier="displayName" id="cUw-yJ-dKu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="WOd-4p-wBu"/>
+                    <connections>
+                        <outlet property="textFieldName" destination="flg-nZ-5m7" id="vh1-PZ-Eja"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="84"/>
+            <point key="canvasLocation" x="869.56521739130437" y="83.705357142857139"/>
         </scene>
         <!--Yellow View Controller-->
         <scene sceneID="zdr-oW-nU3">
@@ -31,14 +52,26 @@
                     <view key="view" contentMode="scaleToFill" id="9t5-dM-3wS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Halo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuH-GI-hYO">
+                                <rect key="frame" x="113" y="438" width="171" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hbf-Jk-kpy"/>
                         <color key="backgroundColor" red="0.96841138601303101" green="0.90847209907801696" blue="0.70823580255330598" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bj8-Q7-tbo"/>
+                    <connections>
+                        <outlet property="labelName" destination="GuH-GI-hYO" id="ZKa-dy-T5a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bq6-xs-V7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="763"/>
+            <point key="canvasLocation" x="869.56521739130437" y="762.72321428571422"/>
         </scene>
         <!--Green View Controller-->
         <scene sceneID="Lm4-lL-GxY">
@@ -206,6 +239,9 @@
             <point key="canvasLocation" x="-6307" y="1458"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cUw-yJ-dKu"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
