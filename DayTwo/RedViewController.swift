@@ -10,9 +10,9 @@ import UIKit
 class RedViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
   
-        let destinationVC = segue.destination as! YellowViewController
+        let destinationVC = segue.destination as? YellowViewController
         
-        destinationVC.saldoSegue = textField.text ?? ""
+        destinationVC?.saldoSegue = textField.text ?? ""
     }
     @IBOutlet weak var textField: UITextField!
 
