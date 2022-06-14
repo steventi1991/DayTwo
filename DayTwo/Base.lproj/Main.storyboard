@@ -70,6 +70,19 @@
                     <view key="view" contentMode="scaleToFill" id="6lm-mc-Fcy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZN-dZ-Bxk">
+                                <rect key="frame" x="160" y="432" width="94" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="NEXT"/>
+                                <connections>
+                                    <action selector="greenNextButton:" destination="AoU-jT-LHY" eventType="touchUpInside" id="7Ui-UW-qzM"/>
+                                    <action selector="redNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gfU-S4-CDS"/>
+                                    <action selector="yellowNextButton:" destination="trw-9T-51C" eventType="touchUpInside" id="qrK-a4-ua7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Tza-yF-yBO"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
