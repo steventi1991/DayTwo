@@ -25,22 +25,36 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qGx-Yz-84y"/>
+                                    <segue destination="trw-9T-51C" kind="show" identifier="dataPasser" id="UTv-lO-vUW"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RM5-P3-Hlu">
+                                <rect key="frame" x="50" y="298" width="264" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bof-jb-1a9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
+                            <constraint firstItem="RM5-P3-Hlu" firstAttribute="top" secondItem="ja1-cm-Tau" secondAttribute="bottom" constant="100" id="5kP-uQ-5sf"/>
                             <constraint firstItem="ja1-cm-Tau" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="APs-17-4Z6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RM5-P3-Hlu" secondAttribute="trailing" constant="100" id="VOI-Na-ows"/>
+                            <constraint firstItem="RM5-P3-Hlu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Wkj-M0-Kbg"/>
                             <constraint firstItem="ja1-cm-Tau" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="jYv-Bl-AZZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WOd-4p-wBu"/>
+                    <connections>
+                        <outlet property="textField" destination="RM5-P3-Hlu" id="AHb-AX-udA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="84"/>
+            <point key="canvasLocation" x="869.56521739130437" y="83.705357142857139"/>
         </scene>
         <!--Yellow View Controller-->
         <scene sceneID="zdr-oW-nU3">
@@ -58,24 +72,33 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RkR-hw-IZn"/>
-                                    <action selector="yellowButton:" destination="trw-9T-51C" eventType="touchUpInside" id="fZa-Dk-9cM"/>
-                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AaaAAAAAAA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it7-Pj-2gj">
+                                <rect key="frame" x="50" y="248" width="314" height="515"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hbf-Jk-kpy"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="it7-Pj-2gj" firstAttribute="top" secondItem="mto-ob-gZD" secondAttribute="bottom" constant="50" id="1yI-b9-8gG"/>
+                            <constraint firstItem="hbf-Jk-kpy" firstAttribute="trailing" secondItem="it7-Pj-2gj" secondAttribute="trailing" constant="50" id="DWV-Up-Ff5"/>
                             <constraint firstItem="mto-ob-gZD" firstAttribute="leading" secondItem="hbf-Jk-kpy" secondAttribute="leading" constant="50" id="SiT-xE-2UC"/>
                             <constraint firstItem="mto-ob-gZD" firstAttribute="top" secondItem="hbf-Jk-kpy" secondAttribute="top" constant="50" id="Xbg-Tf-KDb"/>
+                            <constraint firstItem="it7-Pj-2gj" firstAttribute="leading" secondItem="hbf-Jk-kpy" secondAttribute="leading" constant="50" id="jqq-rN-fkk"/>
+                            <constraint firstItem="hbf-Jk-kpy" firstAttribute="bottom" secondItem="it7-Pj-2gj" secondAttribute="bottom" constant="50" id="zb3-14-YfD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bj8-Q7-tbo"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="it7-Pj-2gj" id="a4T-f8-8kW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bq6-xs-V7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="763"/>
+            <point key="canvasLocation" x="869.56521739130437" y="762.72321428571422"/>
         </scene>
         <!--Green View Controller-->
         <scene sceneID="Lm4-lL-GxY">
@@ -85,8 +108,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMl-DO-gat">
-                                <rect key="frame" x="82" y="202" width="250" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMl-DO-gat">
+                                <rect key="frame" x="50" y="138" width="250" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="AqX-wW-pBs"/>
                                     <constraint firstAttribute="width" constant="250" id="XM4-2d-q7T"/>
@@ -95,13 +118,15 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
                                     <action selector="greenButton:" destination="AoU-jT-LHY" eventType="touchUpInside" id="6af-Ap-9zm"/>
-                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHA-Ba-3ZO"/>
-                                    <action selector="yellowButton:" destination="trw-9T-51C" eventType="touchUpInside" id="qYm-dt-xZf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tza-yF-yBO"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="CMl-DO-gat" firstAttribute="top" secondItem="Tza-yF-yBO" secondAttribute="top" constant="50" id="5vQ-8q-la7"/>
+                            <constraint firstItem="CMl-DO-gat" firstAttribute="leading" secondItem="Tza-yF-yBO" secondAttribute="leading" constant="50" id="orj-Lb-lzN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7fO-5B-dL8"/>
                 </viewController>
@@ -116,6 +141,23 @@
                     <view key="view" contentMode="scaleToFill" id="eG8-9C-MTB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vn-Wg-a95">
+                                <rect key="frame" x="69" y="134" width="250" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aXU-q1-tFw"/>
+                                    <constraint firstAttribute="width" constant="250" id="w3Y-Ld-X3J"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="blueButton:" destination="obf-U3-zW7" eventType="touchUpInside" id="hfI-hv-cjq"/>
+                                    <action selector="greenButton:" destination="AoU-jT-LHY" eventType="touchUpInside" id="4kb-eU-Psx"/>
+                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6dj-7a-MLv"/>
+                                    <action selector="yellowButton:" destination="trw-9T-51C" eventType="touchUpInside" id="bYZ-Z9-xCZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YS1-9W-bL1"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
                     </view>
@@ -132,8 +174,28 @@
                     <view key="view" contentMode="scaleToFill" id="WRt-5z-iOf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOo-UE-led">
+                                <rect key="frame" x="50" y="138" width="250" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9dY-xY-1h6"/>
+                                    <constraint firstAttribute="width" constant="250" id="fCS-St-nQy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="blueButton:" destination="obf-U3-zW7" eventType="touchUpInside" id="FH0-dD-YEP"/>
+                                    <action selector="greenButton:" destination="AoU-jT-LHY" eventType="touchUpInside" id="w9g-jA-Hgd"/>
+                                    <action selector="purple:" destination="pVW-cJ-KcG" eventType="touchUpInside" id="w44-4C-HVV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uVV-MJ-Kux"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="oOo-UE-led" firstAttribute="leading" secondItem="uVV-MJ-Kux" secondAttribute="leading" constant="50" id="o9M-yJ-HbF"/>
+                            <constraint firstItem="oOo-UE-led" firstAttribute="top" secondItem="uVV-MJ-Kux" secondAttribute="top" constant="50" id="ogh-e8-a25"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GP9-n6-WwZ"/>
                 </viewController>
@@ -259,6 +321,9 @@
             <point key="canvasLocation" x="-6307" y="1458"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UTv-lO-vUW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bubble.right.circle.fill" catalog="system" width="128" height="121"/>
         <image name="gear.circle.fill" catalog="system" width="128" height="121"/>
