@@ -17,6 +17,7 @@
 		4E62F15A2858240D004EAE83 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F1592858240D004EAE83 /* GreenViewController.swift */; };
 		4E62F15C2858241C004EAE83 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F15B2858241C004EAE83 /* BlueViewController.swift */; };
 		4E62F15E28582429004EAE83 /* PurpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62F15D28582429004EAE83 /* PurpleViewController.swift */; };
+		F7D284D8285873A8004C57B4 /* NextPurpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D284D7285873A8004C57B4 /* NextPurpleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4E62F1592858240D004EAE83 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		4E62F15B2858241C004EAE83 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		4E62F15D28582429004EAE83 /* PurpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleViewController.swift; sourceTree = "<group>"; };
+		F7D284D7285873A8004C57B4 /* NextPurpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPurpleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				4E62F1592858240D004EAE83 /* GreenViewController.swift */,
 				4E62F15B2858241C004EAE83 /* BlueViewController.swift */,
 				4E62F15D28582429004EAE83 /* PurpleViewController.swift */,
+				F7D284D7285873A8004C57B4 /* NextPurpleViewController.swift */,
 				4E62F149285821A1004EAE83 /* Main.storyboard */,
 				4E62F14C285821A4004EAE83 /* Assets.xcassets */,
 				4E62F14E285821A4004EAE83 /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 				4E62F146285821A1004EAE83 /* SceneDelegate.swift in Sources */,
 				4E62F15C2858241C004EAE83 /* BlueViewController.swift in Sources */,
 				4E62F15A2858240D004EAE83 /* GreenViewController.swift in Sources */,
+				F7D284D8285873A8004C57B4 /* NextPurpleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
