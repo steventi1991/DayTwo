@@ -69,6 +69,17 @@
                     <view key="view" contentMode="scaleToFill" id="6lm-mc-Fcy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hy-dw-5oE">
+                                <rect key="frame" x="174" y="293" width="79" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Page 4"/>
+                                <connections>
+                                    <action selector="movePage4:" destination="AoU-jT-LHY" eventType="touchUpInside" id="RN2-tI-7TD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Tza-yF-yBO"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
@@ -76,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f49-no-qXf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="1458"/>
+            <point key="canvasLocation" x="869.56521739130437" y="1457.8125"/>
         </scene>
         <!--Blue View Controller-->
         <scene sceneID="HTx-6j-E4T">
