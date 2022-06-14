@@ -15,4 +15,8 @@ class BlueViewController: UIViewController {
     }
 
 
+    @IBAction func blueNextButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PurpleViewController")
+       self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
