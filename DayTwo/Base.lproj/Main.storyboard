@@ -49,8 +49,27 @@
                     <view key="view" contentMode="scaleToFill" id="9t5-dM-3wS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mto-ob-gZD">
+                                <rect key="frame" x="50" y="138" width="250" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0SJ-Oi-0sy"/>
+                                    <constraint firstAttribute="width" constant="250" id="p6U-x5-4LC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RkR-hw-IZn"/>
+                                    <action selector="yellowButton:" destination="trw-9T-51C" eventType="touchUpInside" id="fZa-Dk-9cM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hbf-Jk-kpy"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="mto-ob-gZD" firstAttribute="leading" secondItem="hbf-Jk-kpy" secondAttribute="leading" constant="50" id="SiT-xE-2UC"/>
+                            <constraint firstItem="mto-ob-gZD" firstAttribute="top" secondItem="hbf-Jk-kpy" secondAttribute="top" constant="50" id="Xbg-Tf-KDb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bj8-Q7-tbo"/>
                 </viewController>
