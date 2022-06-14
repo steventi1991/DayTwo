@@ -96,6 +96,18 @@
                     <view key="view" contentMode="scaleToFill" id="eG8-9C-MTB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxb-Lu-EDg">
+                                <rect key="frame" x="173" y="433" width="94" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Page 5"/>
+                                <connections>
+                                    <action selector="movePage5:" destination="obf-U3-zW7" eventType="touchUpInside" id="RIw-4i-btd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YS1-9W-bL1"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
                     </view>
@@ -103,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BF2-3n-Veo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="2169"/>
+            <point key="canvasLocation" x="869.56521739130437" y="2168.9732142857142"/>
         </scene>
         <!--Purple View Controller-->
         <scene sceneID="pUc-TB-cdH">

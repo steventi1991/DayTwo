@@ -14,5 +14,9 @@ class BlueViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func movePage5(_ sender: Any) {
+        let BlueVc =  UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "PurpleViewController")
+        self.navigationController?.pushViewController(BlueVc, animated: true)
+    }
+    
 }
