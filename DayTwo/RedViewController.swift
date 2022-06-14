@@ -22,7 +22,7 @@ class RedViewController: UIViewController {
             displayVC.text = textField.text
         }
     }
-    
+    //newcomment
     @IBAction func redButton(_ sender: Any) {
         //let yellowVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "YellowViewController")
         //self.navigationController?.pushViewController(yellowVC, animated: true)
